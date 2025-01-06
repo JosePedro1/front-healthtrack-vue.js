@@ -1,8 +1,10 @@
 <template>
   <div id="app">
+    
     <AuthContainer v-if="showAuth" @loginSuccess="showAuth = false" />
     <TaskContainer v-else @logout="showAuth = true" />
   </div>
+
 </template>
 
 <script>
@@ -20,6 +22,7 @@ export default {
     };
   },
 };
+
 </script>
 
 <style>
